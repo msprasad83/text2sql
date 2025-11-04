@@ -25,7 +25,6 @@ path = kagglehub.dataset_download("umuttuygurr/e-commerce-customer-behavior-and-
 print("Path to dataset files:", path)
 
 df = pd.read_csv(f"{path}/ecommerce_customer_behavior_dataset.csv")
-#/root/.cache/kagglehub/datasets/umuttuygurr/e-commerce-customer-behavior-and-sales-analysis-tr/versions/1/ecommerce_customer_behavior_dataset.csv
 print("Rows:", len(df))
 df.head(3)
 
@@ -146,7 +145,7 @@ chatbot("Provide the top 5 products along with its order details with poor ratin
 chatbot(" Which device is most preffered by customers for placing orders?")
 
 #Validation
-# Try running the query in the below format for cross verify the results
+# Try running the query in the below format to cross verify the results
 
 con.sql("""
  SELECT
